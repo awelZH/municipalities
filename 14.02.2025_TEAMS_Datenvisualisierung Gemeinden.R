@@ -347,35 +347,35 @@ gem_complete_10 <- gem_complete_9
 
 colnames(gem_complete_10)[1] <- "bzk_nr"
 colnames(gem_complete_10)[2] <- "bzk"
-colnames(gem_complete_10)[3] <- "bfs"
+colnames(gem_complete_10)[3] <- "bfs" # Kay's code: "Gemeinde"?
 colnames(gem_complete_10)[4] <- "gemeinde"
 colnames(gem_complete_10)[5] <- "ecospeed"
-colnames(gem_complete_10)[6] <- "kd22"
-colnames(gem_complete_10)[7] <- "kd23_jun"
-colnames(gem_complete_10)[8] <- "kd23_oct"
-colnames(gem_complete_10)[9] <- "kd24_jun"
-colnames(gem_complete_10)[10] <- "kd24_oct"
+colnames(gem_complete_10)[6] <- "kd22" # Kay's code: "kd_2022"
+colnames(gem_complete_10)[7] <- "kd23_jun" # Kay's code: "kd_2023"
+colnames(gem_complete_10)[8] <- "kd23_oct" # Kay's code: "kd_vO_2023"
+colnames(gem_complete_10)[9] <- "kd24_jun" # not in Kay's code
+colnames(gem_complete_10)[10] <- "kd24_oct" # not in Kay's code
 
-colnames(gem_complete_10)[11] <- "ag_mob"
-colnames(gem_complete_10)[12] <- "ag_verst"
-colnames(gem_complete_10)[13] <- "ag_hitze"
-colnames(gem_complete_10)[14] <- "ag_teil"
-colnames(gem_complete_10)[15] <- "ag_waerme"
-colnames(gem_complete_10)[16] <- "workshop"
-colnames(gem_complete_10)[17] <- "nr_part"
-colnames(gem_complete_10)[18] <- "nr_ag"
-colnames(gem_complete_10)[19] <- "net22"
-colnames(gem_complete_10)[20] <- "net23"
+colnames(gem_complete_10)[11] <- "ag_mob" # Kay's code: "kd_ag_e_mobilitaet"
+colnames(gem_complete_10)[12] <- "ag_verst" # Kay's code: "kd_ag_verstetigung"
+colnames(gem_complete_10)[13] <- "ag_hitze" # Kay's code: "kd_ag_hitzeminderung"
+colnames(gem_complete_10)[14] <- "ag_teil" # Kay's code: "kd_ag_teilhabe"
+colnames(gem_complete_10)[15] <- "ag_waerme" # Kay's code: "kd_ag_wärme_gas"?
+colnames(gem_complete_10)[16] <- "workshop" # Kay's code: "workshop_anpassung"
+colnames(gem_complete_10)[17] <- "nr_part" # not in Kay's code
+colnames(gem_complete_10)[18] <- "nr_ag" # not in Kay's code
+colnames(gem_complete_10)[19] <- "net22" # Kay's code: "netto_null_kurs_2022"
+colnames(gem_complete_10)[20] <- "net23" # Kay's code: "netto_null_kurs_2023"
 
-colnames(gem_complete_10)[21] <- "en_stadt"
-colnames(gem_complete_10)[22] <- "en_plan"
-colnames(gem_complete_10)[23] <- "en_plan_year"
-colnames(gem_complete_10)[24] <- "gas"
-colnames(gem_complete_10)[25] <- "heat"
-colnames(gem_complete_10)[26] <- "status"
-colnames(gem_complete_10)[27] <- "goal"
-colnames(gem_complete_10)[28] <- "strat"
-colnames(gem_complete_10)[29] <- "adapt"
+colnames(gem_complete_10)[21] <- "en_stadt" # Kay's code: "energiestadt"
+colnames(gem_complete_10)[22] <- "en_plan" # Kay's code: "energieplanung"
+colnames(gem_complete_10)[23] <- "en_plan_year" # Kay's code: "energieplanung_jahr"
+colnames(gem_complete_10)[24] <- "gas" # Kay's code: "gasversorgung_2022"
+colnames(gem_complete_10)[25] <- "heat" # Kay's code: "waermeverbund"
+colnames(gem_complete_10)[26] <- "status" # Kay's code: "klimastrategie"
+colnames(gem_complete_10)[27] <- "goal" # Kay's code: "zieljahr"
+colnames(gem_complete_10)[28] <- "strat" # Kay's code: "klima_energie_strategie"
+colnames(gem_complete_10)[29] <- "adapt" # Kay's code: "anpassung"
 
 # download as csv file
 write.csv(gem_complete_10, "table_municipalities_2.csv", row.names = FALSE)
